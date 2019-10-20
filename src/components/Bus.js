@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import BusItem from './BusItem';
 import {Link} from 'react-router-dom';
+import './../components/Login.css';
 
 class Bus extends Component{
     constructor(){
@@ -29,12 +30,11 @@ class Bus extends Component{
             );
         })
         return (
-            <div>
+            <div className="busSummary">
                 <h1>Busses</h1>
-                <ul className="list-group">
                     {busItem}
-                </ul>
-                <Link to="/create">Add Bus</Link>
+                <Link className="buttonOne" to="/create">Add Bus</Link>
+                <Link className="buttonTwo" to="/">Log Out</Link>
              </div>
         )
     }

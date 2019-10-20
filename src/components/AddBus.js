@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import './../components/Login.css';
 
 class AddBus extends Component{
 
@@ -20,10 +21,14 @@ class AddBus extends Component{
         }
         this.addBus(bus);
     }
+    goHome(){
+        this.props.history.push('/bus')
+    }
 
     render() {
-    return (<div>
+    return (<div className="addContent">
          <form onSubmit={this.onAddSubmit.bind(this)}>
+             <h1>Enter bus details</h1>
                 <div className="form-group row">
                 <label className="col-sm-2 col-form-label">Name</label>
                 <div className="col-sm-10">
@@ -38,6 +43,7 @@ class AddBus extends Component{
                 </div>
                 <input type="submit" value="save"/>
         </form>
+        <button onClick={this.goHome.bind(this)}>Cancel</button>
     </div>)
     }
 }
