@@ -1,0 +1,54 @@
+*{
+    background-color: cadetblue;
+}
+
+.loginStyle{
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.form-control{
+    margin-top: 1rem;
+    color: white;
+}
+
+.loginBtn{
+    margin-top: 1.5rem;
+    padding: .6rem;
+}
+
+.busSummary{
+    text-align: center;
+    list-style: none;
+}
+
+.buttonOne{
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #eeeeee;
+    color: #333333;
+    padding: 6px 12px 6px 12px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+    margin-right: 2rem;
+}
+
+.buttonTwo{
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #3e46ac;
+    color: #ffffff;
+    padding: 6px 12px 6px 12px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+    margin-right: 2rem;
+}
+
+.addContent{
+    text-align: center;
+    margin-top: 10rem;
+}
